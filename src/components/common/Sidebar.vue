@@ -49,11 +49,11 @@ export default {
           index: 'settings_manager',
           title: '配置'
         },
-        // {
-        //     icon: 'el-icon-lx-copy',
-        //     index: 'movie_release',
-        //     title: '电影'
-        // },
+        {
+            icon: 'el-icon-lx-copy',
+            index: 'movie_release',
+            title: '电影'
+        },
         {
           icon: 'el-icon-lx-calendar',
           index: 'tv_release',

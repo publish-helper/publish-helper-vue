@@ -16,6 +16,10 @@ Vue.use(ElementUI, {
 //使用钩子函数对路由进行权限跳转
 router.beforeEach((to, from, next) => {
     document.title = "发布辅助器"
+    localStorage.setItem('ms_username', "admin");
+    localStorage.setItem('token', "data.token");
+    localStorage.setItem('workId', "data.workId");
+    localStorage.setItem('role', "admin");
     const name = localStorage.getItem('ms_username');
     const role = localStorage.getItem('role');
     if (!name && to.path !== '/login') {
